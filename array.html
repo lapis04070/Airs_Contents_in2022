@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>配列</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>11章 配列</h1>
+<h2>変数から配列へ</h2>
+<sub_title>配列の作り方</sub_title><br>
+<p align="left">配列とは同じデータ型の値を複数格納し、一つの変数にまとめて使用することができます。</p>
+<p align="left">また、格納された値は何番目かを指定して取り出すことができるのも特徴です。</p>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+        <td width="97%" height="auto">
+		int[] x;<span>//配列を宣言</span><br>
+		<br>		
+		x = new int[2];<span>//配列の生成</span><br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+上記の例ではまず、配列となるxを宣言しています。データ型の後ろに[]をつけて宣言をします。<br>
+その後、2個の整数からなる配列xを作ります。<br>
+配列を作るときには<font color="red">[]付きのデータ型、変数名、=、new、データ型、[格納する数]</font>の書式です。<br><br>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+	7<br>
+	8<br>
+        <td width="97%" height="auto">
+		int[] x;<span>//配列を宣言</span><br>
+		<br>
+		void setup(){<br>		
+		<span>size(200,200);</span><br>
+		<span>x = new int[2];<span>//配列の生成</span></span><br>
+		<span>x[0] = 12;<span>//1つ目の値を代入</span></span><br>
+		<span>x[1] = 2;<span>//2つ目の値を代入</span></span><br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+配列の中身の項目は要素と呼ばれ、各要素にはインデックスと呼ばれる位置を示すものがあります。インデックスは0から数えます。<br>
+5行目ではインデックスの0番目の要素に12を、6行目ではインデックスの1番目の要素に2を代入しています。<br>
+また、以下のように一括で作る方法もあります。<br>
+上記と以下のソースコードは同じ結果になります。<br><br>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+        <td width="97%" height="auto">
+		int[] x = {12,2};<span>//宣言、生成、代入</span><br>
+		<br>
+		void setup(){<br>		
+		<span>size(200,200);</span><br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+</body>
+</html>
