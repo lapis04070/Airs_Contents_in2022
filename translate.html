@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>移動回転収縮</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>6章 移動、回転、収縮</h1>
+<h2>座標の移動</h2>
+<sub_title>座標移動</sub_title><br>
+<p align="left">translate()関数は、座標系を移動させる関数です。</p>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+        <td width="97%" height="auto">
+		void draw() {<br>
+		<span>translate(mouseX,mouseY);</span><br>
+		<span>rect(0,0,30,30);</span><br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+Processingでは初期状態は座標(0,0)は画面左上に設定されています。<br>
+translate()関数では座標(0,0)の値を変える事ができるため、今回のプログラムではマウス座標が(0,0)になるよう設定されています。<br>
+rectは座標(0,0)を基準に描画されるため、マウスが移動すると図形も移動します。<br><br>
+次に、rotate()関数は座標系を回転させる関数です。<br>
+<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+        <td width="97%" height="auto">
+		void draw() {<br>
+		<span>rotate(mouseX / 100.0);</span><br>
+		<span>rect(0,0,160,20);</span><br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+図形を回転させるにはrotate()関数を使い、回転角を決定します。今回はマウスのX座標を角度に変換しています。<br>
+rotate()関数を使うことで画面内の座標系が回転するため、図形が回転移動させることができます。<br><br>
+最後にscale()関数は座標系を伸縮させる事ができます。<br><br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+        <td width="97%" height="auto">
+		void draw() {<br>
+		<span>scale(1.5);</span><br>
+		<span>rect(0,0,160,20);</span><br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+図形を伸縮させるにはscale()関数を使います。画面のすべての座標が値に応じて拡大、縮小されます。<br>
+例として今回では1.5なのですべてが150%の大きさに拡大されます。<br><br>
+</body>
+</html>

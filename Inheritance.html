@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>継承</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>17章 継承</h1>
+<h2>継承</h2>
+<sub_title>クラスの継承</sub_title><br><br>
+Processingではクラスは他のクラスのフィールドとメソッドを継承することができます。<br>
+継承されるクラスを親クラス(Super Class)継承するクラスを子クラス(Sub Class)と言います。<br>
+親クラスは今まで通りクラス作成、子クラスは新しいタブに<font color="red">class 子クラス名 extends 親クラス名</font>を記述して定義します。<br><br>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+        <td width="97%" height="auto">
+		class SubJitterBug extends JitterBug {<br>
+		<span>SubJitterBug(float tempX, float tempY, int tempDiameter) {</span><br>
+		<span><span>super(tempX, tempY, tempDiameter);</span></span><br>
+		<span>}</span><br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+この例ではまず1行目に子クラスの定義、2行目でコンストラクタの記述を行っています。<br>
+コンストラクタの中身のsuperは親クラスのコンストラクタを呼び出す事ができる特殊なメソッドです。<br>
+こうすることで親クラスと同じ状態を持った子クラスを作ることができます。<br>
+ここから親クラスにはないフィールドやメソッドを追加することでクラス拡張をすることができます。<br><br>
+<br>
+</body>
+</html>

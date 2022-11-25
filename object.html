@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>オブジェクト</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>10章 オブジェクト</h1>
+<h2>オブジェクト指向プログラミング</h2>
+<sub_title>フィールドとメソッド</sub_title><br><br>
+オブジェクト指向プログラミングとは、もの(オブジェクト)といった単位によって構成されるプログラムです。<br>
+オブジェクト指向プログラミングでは変数を<font color="red">フィールド(もしくはインスタンス変数)</font>、関数を<font color="red">メソッド</font>と呼びます。<br>
+人で例えると「歩く」、「食べる」といった機能を持ったオブジェクトです。これらはメソッドであり「体重」、「身長」といったフィールドを持ちます。<br><br>
+
+
+<sub_title>クラス</sub_title><br>
+クラスとはオブジェクトにおいての雛形のようなものです。<br>
+人で例えるとクラスはDNAなどの人としての雛形、オブジェクトは実際の人そのものです。<br>
+1つのクラスからできていても、個性豊かな様々な人が存在するのと同じことです。この実際の人間のことを<font color="red">インスタンス(実態)</font>といいます。<br>
+クラスの定義は以下のようにします。<br>
+<br>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+	7<br>
+	8<br>
+	9<br>
+	10<br>
+	11<br>
+	12<br>
+	13<br>
+	14<br>
+	15<br>
+	16<br>
+	17<br>
+	18<br>
+	19<br>
+	20<br>
+	21<br>
+	22<br>
+	23<br>
+	24<br>
+        <td width="97%" height="auto">
+		class JitterBug{<br>
+		<br>
+		<span>float x,y;</span><br>
+		<span>int diameter;</span><br>
+		<span>float speed = 2.5;</span><br>
+		<br>
+		//初期化用のメソッド(コンストラクタ)<br>
+		<span>JitterBug(float tempX, float tempY, int tempDiameter){</span><br>
+		<span><span>//x,y,diameterの初期値はインスタンスの引数</span></span><br>
+		<span><span>x = tempX;</span></span><br>
+		<span><span>y = tempY;</span></span><br>
+		<span><span>diameter = tempDiameter;</span></span><br>
+		<span>}</span><br>
+		<br>
+		<span>void move(){</span><br>
+		<span><span>x += random(-speed, speed);</span></span><br>
+		<span><span>y += random(-speed, speed);</span></span><br>
+		<span>}</span><br>
+		<br>
+		<span>void display() {</span><br>
+		<span><span>ellipse(x,y,diameter,diameter);</span></span><br>
+		<span>}</span><br>
+		<br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+最初のステップはクラスを定義します。(1行目)クラスを作成する場合はクラス名の最初を大文字にするのは慣例であり、わかりやすくなります。<br><br>
+2つ目のステップはフィールドの追加です。(3~5行目)<br>
+今回の例ではx,y,diameterのフィールドは初期化用のメソッド(コンストラクタ)内で代入するようにしています。もし、オブジェクトごとに値が違わない場合、型の宣言と同時に初期値をセットするのが良いです。<br><br>
+3つ目のステップではコンストラクタの追加です。コンストラクタはクラスと同じ名前でオブジェクトが作られるときにフィールドの初期値を代入する役目を持っています。<br>
+今回の例では、コンストラクタ中に一時的に存在する変数に代入するため、わかりやすいようtempをつけています。(7~13行目)<br>
+インスタンスを生成するには以下のような構文で生成する事ができます。<br>
+例、<font color="red">クラス名　インスタンスの名前 =　new クラスの名前(コンストラクタに入れる引数);</font><br><br>
+最後のステップではメソッドを追加します。クラスの中という違いはあれど、関数を書くのに似ています。(15~22行目)<br><br>
+<br>
+</body>
+</html>

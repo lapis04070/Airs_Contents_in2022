@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>JSON</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>12章 データ</h1>
+<h2>JSON形式</h2>
+<sub_title>JSON形式の読み込み</sub_title><br>
+<p align="left">JSON(JavaScript Object Notation)はデータの交換に適したフォーマットになっています。</p>
+<p align="left">実例としてタイトル、監督、公開年、レーティングのデータを持った映画の情報を使えるようにします。</p>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+        <td width="97%" height="auto">
+		{<br>
+		<span>"title": "Alphaville",</span><br>
+		<span>"director": "Jean-Luc Godard",</span><br>
+		<span>"year": 1964,</span><br>
+		<span>"rating": 7.2</span><br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+このパターンを繰り返すことで、たくさんの映画の情報を記録することができます。<br>
+CSV形式との違いとしてCSVの方が少ない文字数で表現できる一方、JSON形式ではラベルがあるため人にとって認識しやすい形になっています。<br>
+以下はJSON形式のファイルを読み込む例です。<br><br>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+	7<br>
+	8<br>
+	9<br>
+	10<br>
+	11<br>
+        <td width="97%" height="auto">
+		JSONObject film;<br>
+		<br>
+		void setup(){<br>
+		<span>film = loadJSONObject("film.json");</span><br>
+		<span>String title = film.getString("title");</span><br>
+		<span>String dir = film.getString("director");</span><br>
+		<span>int year = film.getInt("year");</span><br>
+		<span>float rating = film.getFloat("rating");</span><br>
+		<span>println(title + "by" + dir + ", " + year);</span><br>
+		<span>println("Rating: " + rating);</span><br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+今回はfilm.jsonという名前の映画の情報が入ったファイルを読み込みました。<br>
+今回の結果はコンソールにて以下のように出力されます。<br><br>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        <td width="97%" height="auto">
+		AlphavillebyJean-Luc Godard, 1964<br>
+		Rating: 7.2<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+</body>
+</html>

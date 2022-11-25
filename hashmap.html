@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>HashMap</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>16章 HashMap</h1>
+<h2>HashMapオブジェクト</h2>
+<sub_title>HashMapオブジェクトの生成</sub_title><br><br>
+複数のオブジェクトを管理する方法として、今までは配列やArrayListがありました。<br>
+それらと違い、HashMapでは格納された中身を値ではなく名前で管理できる特徴があり、その名前をキーと呼びます。<br>
+キーと値をペアで管理しており、<br>
+HasyMap関数は<font color="red">HashMap&lt;キーのデータ型, 値のデータ型> オブジェクト名 = new HashMap&lt;キーのデータ型, 値のデータ型>();</font>の構文で書かれます。<br>
+また、以下のようにHashMapにキーと値のペアを入力するにはput、取り出すにはgetといったメソッドを使用します。<br>
+<font color="red">オブジェクト名.put("キー名",値);</font><br>
+<font color="red">オブジェクト名.get("キー名");</font><br><br>
+
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+	7<br>
+	8<br>
+	9<br>
+        <td width="97%" height="auto">
+		//今回のキーは文字列、値は整数を使用<br>
+		HashMap&lt;String, Integer> HM = new HashMap&lt;String, Integer>();<br>
+		<br>
+		HM.put("Jan",1);<br>
+		HM.put("Feb",2);<br>
+		HM.put("Mar",3);<br>
+		<br>
+		int month = HM.get("Jan");<br>
+		println("Jan is "+ month);
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+この例では、月の英語の文字列と値をペアに配置しました。<br>
+Janの中身のオブジェクトを取り出したい場合、Janを呼び出すことで出力結果に<font color="red">Jan is 1</font>と表示され、中身の1を取り出す事ができました。<br>
+このようにHashMapを使用することで、値を名前で呼び出すことができるようになります。<br>
+<br>
+</body>
+</html>

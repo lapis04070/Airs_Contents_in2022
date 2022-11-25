@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>動き</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>8章 動き</h1>
+<h2>乱数</h2>
+<sub_title>乱数の生成</sub_title><br>
+<p align="left">random()関数は、設定した範囲内の乱数を作りだす関数です。</p>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+        <td width="97%" height="auto">
+		void draw() {<br>
+		<span>float r = random(0,mouseX);</span><br>
+		<span>println(r);</span><br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+この例では、0からマウスのx座標の値の乱数をコンソールに出力するプログラムです。<br>
+このように、乱数は<font color="red">random(値の下限、値の上限)</font>の書式で書かれます。<br><br>
+<br>
+</body>
+</html>

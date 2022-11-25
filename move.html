@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>動き</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>8章 動き</h1>
+<h2>スピードと方向</h2>
+<sub_title>図形の移動</sub_title><br>
+<p align="left">細かい動きを表現するには小数点の値を持つ数値を格納できるfloat型を使用します。</p>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+	7<br>
+	8<br>
+	9<br>
+	10<br>
+	11<br>
+	12<br>
+	13<br>
+        <td width="97%" height="auto">
+		float x = 40;<br>
+		float speed = 0.5;<br>
+		<br>
+		void setup(){<br>
+			<span>size(240,120);</span><br>
+		}<br>
+	<br>
+		void draw() {<br>
+		<span>background(0);</span><br>
+		<span>x += speed;<span>//xに加算</span><br>
+		<span>arc(x,60,40,40,0.52,5.76);</span><br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+ここでは、円の中心のx座標をfloat型の変数xとして右へと移動するプログラムです。<br>
+float型の変数xにdraw()関数の実行に合わせて変数speedの値が追加されていきます。<br>
+これにより円の中心の値が増加していき、図形を移動させる事ができます。<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>計算</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>4章 変数</h1>
+<h2>計算</h2>
+<sub_title>変数と計算</sub_title><br>
+<p align="left">コードには+や*といった記号が多く使われています。</p>
+<p align="left">これらは演算子と呼ばれ、2つの数値の間に置かれ、計算式を表します。</p><br>
+<p align="center">基本的な演算子</p>
+
+<div align="center">
+ <table border="1">
+    <tr>
+      <th>演算子</th>
+      <th>説明</th>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>足す(加算)</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>引く(減算)</td>
+	</tr>
+	<tr>
+      <td>*</td>
+      <td>かける(乗算)</td>
+    </tr>
+	<tr>
+      <td>/</td>
+      <td>割る(除算)</td>
+    </tr>
+	<tr>
+      <td>=</td>
+      <td>代入</td>
+    </tr>
+  </table>
+</div>
+<br>
+Processingでは演算子の優先順位があります。<br>
+乗算、除算のほうが加算、減算よりも優先されるルールがあります。<br>
+また、カッコ()で囲んだ中は最も高い優先順位で処理されます。<br>
+頻繁に使用する式では簡単にかけるよう、以下のような短縮形も用意されています。<br><br>
+<table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+		<span>x += 10;<span>//x = x + 10と同じ</span></span><br>
+		<span>y -= 15;<span>//y = y - 15と同じ</span></span><br>
+		<span>x++;<span>//x = x + 1と同じ</span></span><br>
+		<span>y--;<span>//y = y - 1と同じ</span></span><br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
