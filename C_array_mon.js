@@ -137,7 +137,7 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_286 = function() {
-	this.initialize(ss["C_array_mon_atlas_18"]);
+	this.initialize(ss["C_array_mon_atlas_19"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -200,7 +200,7 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_277 = function() {
-	this.initialize(ss["C_array_mon_atlas_18"]);
+	this.initialize(ss["C_array_mon_atlas_19"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
@@ -256,7 +256,7 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_269 = function() {
-	this.initialize(ss["C_array_mon_atlas_19"]);
+	this.initialize(ss["C_array_mon_atlas_18"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -312,7 +312,7 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_250 = function() {
-	this.initialize(ss["C_array_mon_atlas_19"]);
+	this.initialize(ss["C_array_mon_atlas_18"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
@@ -2022,7 +2022,6 @@ if (reversed == null) { reversed = false; }
 	this.next = new lib.next();
 	this.next.name = "next";
 	this.next.setTransform(960.45,670.95,0.2409,0.2409,0,0,0,0,0.2);
-	new cjs.ButtonHelper(this.next, 0, 1, 2, false, new lib.next(), 3);
 
 	this.instance_8 = new lib.名称未設定1();
 	this.instance_8.setTransform(0,4,1.9838,1.6378);
