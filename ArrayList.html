@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>ArrayList</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>15章 ArrayList</h1>
+<h2>ArrayListオブジェクト</h2>
+<sub_title>ArrayListオブジェクトの生成</sub_title><br><br>
+複数のオブジェクトを管理するために、配列を使う例を取り上げていきましたが、配列はあらかじめ要素の数を決めておく必要があります。<br>
+この要素の数を超えることはできないため、プログラムの柔軟性が低下します。<br>
+この問題を解決するオブジェクトが<font color="red">ArrayListオブジェクト</font>です<br>
+ArrayListオブジェクトには<font color="red">add</font>,<font color="red">get</font>,<font color="red">size</font>,<font color="red">remove</font>,の振舞いがあります。<br>
+これらの使い方を理解することが重要になります。<br>
+また、ArrayListオブジェクトは一般的なオブジェクトの生成と同じ記述ですが、何を管理するのかを型パラメータで指定するところが異なります。<br>
+この部分のプログラムは以下のようになります。<br>
+<font color="red">ArrayList<管理する型> arrayList = new ArrayList<管理する型>();</font><br>
+
+<h3>ArrayListオブジェクトのメソッド</h3>
+<div align="center">
+　<table border="1">
+    <tr>
+      <th>メソッド名</th>
+	<th>詳細</th>
+    </tr>
+	<tr>
+      <td>add</td>
+	<th>ArrayListオブジェクトに別のオブジェクトを追加する</th>
+    </tr>
+	<tr>
+      <td>get</td>
+	<th>ArrayListオブジェクトで管理しているオブジェクトをgetメソッドで参照情報を得ることができる。</th>
+    </tr>
+      <td>size</td>
+	<th>配列の時は.lengthと書くが、ArrayListオブジェクトでは.sizeメソッドを書く。</th>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>

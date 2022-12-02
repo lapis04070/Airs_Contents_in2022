@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>Object_Hairetu</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>11章 オブジェクトの配列</h1>
+<h2>オブジェクトの配列</h2>
+扱う変数が1つや2つであれば、配列が不要ですが、要素が多い場合には変数の代わりに配列を使っていきます。<br>
+配列の中のそれぞれの項目は「<font color="red">要素</font>」と呼ばれ、各要素の位置は「<font color="red">インデックス</font>」で示されます。<br>
+画面上の座標と同じであるようにインデックスも0から数えるため、配列の最初の要素を示すインデックスは0、2つ目の要素は1です。<br>
+<br>
+<sub_title>配列の作り方</sub_title><br>
+<br>
+配列と変数の違いを比べて見ます
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+
+        <td width="97%" height="auto">
+		int x; //整数型の変数を作る<br>
+		<br>
+		int[] x; //配列として宣言するときは、データ型の後ろに角カッコ([])を付けます。<br>
+
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+次に、newキーワードを使って配列を生成し、要素数を定義します<br>
+下記のコードは、100個の整数からなる配列を作りましたが、10個や1000個からでも作ることができます。
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+        <td width="97%" height="auto">
+		<br>
+		int[] x = new int[100]<br>
+		<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+今回は、int[]を利用しましたが、Processingのデータ型はどれでも配列にすることができます。<br>
+<h4>配列作成のまとめ</h4>
+配列を作るときは、始めに角カッコ付きのデータ型を書き、自分が選んだ変数名を書いて、代入演算子(=)を書きます<br>
+次に、newキーワード、そしてもう一度データ型を書きます(これは始めに書いた角カッコ付きのデータ型です)。最後にもう一度書いたデータ型の角カッコの中に数字を書きます。<br>
+このパターンは全データ型に共通です。<br>
+下記が配列を作るときのコードです。<br>
+<font color="red">データ型[] 変数名 = new データ型[数字];</font><br>
+<br>
+</body>
+</html>

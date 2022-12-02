@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>CSV</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>12章 データ</h1>
+<h2>CSV形式</h2>
+<sub_title>CSV形式の読み込み</sub_title><br>
+<p align="left">表形式のデータは、カンマやタブで区切られたプレーンテキストファイルとして保存されていることがあります。<br>
+そのようなファイルをCSV(comma-separated values)ファイルといい、拡張子は"<font color="red">.csv</font>"です。</p>
+<p align="left">例としてmediaファイル内のortiz.csvのデータをProcessingに読み込ませます。</p>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+	7<br>
+	8<br>
+	9<br>
+	10<br>
+	11<br>
+	12<br>
+        <td width="97%" height="auto">
+		Table stats;<br>
+		<br>
+		void setup(){<br>
+		<span>stats = loadTable("ortiz.csv");</span><br>
+		<span>for (int i = 0; i < stats.getRowCount(); i++){</span><br>
+		<span><span>int year = stats.getInt(i, 0);</span><br>
+		<span><span>int homeRuns = stats.getInt(i, 1);</span><br>
+		<span><span>int rbi = stats.getInt(i, 2);</span><br>
+		<span>float average = stats.getFloat(i, 3);</span><br>
+		<span>println(year, homeRuns, rbi, average);</span><br>
+		<span>}<br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+今回はortiz.csvファイルを読み込みました。<br>
+結果、csv内のデータがProcessingのコンソール内に表示されます。<br><br>
+
+</body>
+</html>
