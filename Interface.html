@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>インターフェース</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+
+</head>
+<body>
+
+<h1>14章 インターフェース</h1>
+<h2>インターフェース</h2>
+<sub_title>インターフェース</sub_title><br>
+複数のオブジェクトを管理するために、第11章で配列を使う例を上げましたが、配列は同じ型のオブジェクトしか扱うことができません。<br>
+一つの配列で二つのオブジェクトの両方を管理できるのが、インターフェースの概念です。<br>
+<br>
+
+<h3>インターフェースの定義</h3>
+作成した2つのオブジェクトの両方を管理するためにインターフェースを定義し、これを2つのオブジェクトに実装します。<br>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+
+        <td width="97%" height="auto">
+		interface インターフェース名{ //作成したタブの名前を記述する<br>
+		<span>void display();//displayメソッドの型と名前の部分のみ記述し、本体は記述しません。<br>
+		}<br>
+
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+この操作は、<font color="red">インターフェースの抽出</font>と言います。<br>
+<br>
+<h3>オブジェクトにインターフェースの実装</h3>
+オブジェクトタブ内のオブジェクトクラスのクラス名の後に以下のように記述します。<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+
+        <td width="97%" height="auto">
+		class オブジェクト名 <font color="red">implements インターフェース名</font>{<br>
+		<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
