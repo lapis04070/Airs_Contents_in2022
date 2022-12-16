@@ -579,12 +579,12 @@ lib.properties = {
 	color: "#FFFFD5",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/json_atlas_1.png", id:"json_atlas_1"},
-		{src:"images/json_atlas_2.png", id:"json_atlas_2"},
-		{src:"images/json_atlas_3.png", id:"json_atlas_3"},
-		{src:"images/json_atlas_4.png", id:"json_atlas_4"},
-		{src:"images/json_atlas_5.png", id:"json_atlas_5"},
-		{src:"images/json_atlas_6.png", id:"json_atlas_6"}
+		{src:"images/json_atlas_1.png?1671165083189", id:"json_atlas_1"},
+		{src:"images/json_atlas_2.png?1671165083190", id:"json_atlas_2"},
+		{src:"images/json_atlas_3.png?1671165083190", id:"json_atlas_3"},
+		{src:"images/json_atlas_4.png?1671165083190", id:"json_atlas_4"},
+		{src:"images/json_atlas_5.png?1671165083190", id:"json_atlas_5"},
+		{src:"images/json_atlas_6.png?1671165083190", id:"json_atlas_6"}
 	],
 	preloads: []
 };
