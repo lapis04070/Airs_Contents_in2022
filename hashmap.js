@@ -4,11 +4,11 @@ var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"hashmap_atlas_1", frames: [[0,162,1374,160],[0,0,1491,160],[1280,701,148,82],[1880,753,141,82],[1493,0,478,375],[1430,753,148,82],[700,701,288,82],[0,324,478,375],[0,701,348,107],[1440,549,499,100],[1580,753,148,82],[700,785,141,82],[480,324,478,375],[1730,753,148,82],[990,701,288,82],[960,324,478,375],[350,701,348,107],[1440,651,499,100],[1440,377,555,170]]},
-		{name:"hashmap_atlas_2", frames: [[0,0,2038,744],[0,746,2038,744]]},
-		{name:"hashmap_atlas_3", frames: [[0,0,2038,744],[0,746,2038,744]]},
+		{name:"hashmap_atlas_2", frames: [[0,480,1476,238],[0,1635,1637,160],[0,1473,1678,160],[0,1797,1536,160],[0,0,1617,238],[0,240,1595,238],[0,720,1526,199],[552,921,555,486],[0,921,550,550]]},
+		{name:"hashmap_atlas_3", frames: [[0,1226,1654,238],[0,1706,1622,238],[0,746,1675,238],[0,986,1661,238],[0,0,2038,744],[0,1466,1630,238]]},
 		{name:"hashmap_atlas_4", frames: [[0,0,2038,744],[0,746,2038,744]]},
-		{name:"hashmap_atlas_5", frames: [[0,480,1476,238],[0,1635,1637,160],[0,1473,1678,160],[0,1797,1536,160],[0,0,1617,238],[0,240,1595,238],[0,720,1526,199],[552,921,555,486],[0,921,550,550]]},
-		{name:"hashmap_atlas_6", frames: [[0,1226,1654,238],[0,1706,1622,238],[0,746,1675,238],[0,986,1661,238],[0,0,2038,744],[0,1466,1630,238]]},
+		{name:"hashmap_atlas_5", frames: [[0,0,2038,744],[0,746,2038,744]]},
+		{name:"hashmap_atlas_6", frames: [[0,0,2038,744],[0,746,2038,744]]},
 		{name:"hashmap_atlas_7", frames: [[0,0,2038,744],[0,746,2038,744]]}
 ];
 
@@ -41,7 +41,7 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_48 = function() {
-	this.initialize(ss["hashmap_atlas_6"]);
+	this.initialize(ss["hashmap_atlas_3"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -55,14 +55,14 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_46 = function() {
-	this.initialize(ss["hashmap_atlas_5"]);
+	this.initialize(ss["hashmap_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_45 = function() {
-	this.initialize(ss["hashmap_atlas_2"]);
+	this.initialize(ss["hashmap_atlas_6"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -76,42 +76,42 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_43 = function() {
-	this.initialize(ss["hashmap_atlas_2"]);
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedBmp_42 = function() {
-	this.initialize(ss["hashmap_atlas_5"]);
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedBmp_41 = function() {
-	this.initialize(ss["hashmap_atlas_3"]);
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedBmp_40 = function() {
 	this.initialize(ss["hashmap_atlas_6"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_39 = function() {
+(lib.CachedBmp_42 = function() {
+	this.initialize(ss["hashmap_atlas_2"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_41 = function() {
+	this.initialize(ss["hashmap_atlas_5"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_40 = function() {
 	this.initialize(ss["hashmap_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_38 = function() {
+(lib.CachedBmp_39 = function() {
 	this.initialize(ss["hashmap_atlas_5"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_38 = function() {
+	this.initialize(ss["hashmap_atlas_2"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
@@ -125,7 +125,7 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_26 = function() {
-	this.initialize(ss["hashmap_atlas_6"]);
+	this.initialize(ss["hashmap_atlas_3"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
@@ -139,21 +139,21 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_24 = function() {
-	this.initialize(ss["hashmap_atlas_6"]);
+	this.initialize(ss["hashmap_atlas_3"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_23 = function() {
-	this.initialize(ss["hashmap_atlas_6"]);
+	this.initialize(ss["hashmap_atlas_3"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_22 = function() {
-	this.initialize(ss["hashmap_atlas_5"]);
+	this.initialize(ss["hashmap_atlas_2"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
@@ -223,7 +223,7 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_12 = function() {
-	this.initialize(ss["hashmap_atlas_5"]);
+	this.initialize(ss["hashmap_atlas_2"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
@@ -286,35 +286,35 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_3 = function() {
-	this.initialize(ss["hashmap_atlas_6"]);
+	this.initialize(ss["hashmap_atlas_3"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_2 = function() {
-	this.initialize(ss["hashmap_atlas_5"]);
+	this.initialize(ss["hashmap_atlas_2"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_1 = function() {
-	this.initialize(ss["hashmap_atlas_5"]);
+	this.initialize(ss["hashmap_atlas_2"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.名称未設定1 = function() {
-	this.initialize(ss["hashmap_atlas_5"]);
+	this.initialize(ss["hashmap_atlas_2"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.名称未設定3 = function() {
-	this.initialize(ss["hashmap_atlas_5"]);
+	this.initialize(ss["hashmap_atlas_2"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
