@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>関数 Bパターン</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>9章 関数</h1>
+<h2>関数 Bパターン</h2>
+<sub_title>関数を使って数を増やす</sub_title><br>
+<p align="left">まずはじめに、下のフクロウを描いてみます</p>
+<img src="フクロウ.png" alt="フクロウ" width=400 height=400 align="left">
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+        7<br>
+        8<br>
+	9<br>
+	10<br>
+	11<br>
+        12<br>
+        13<br>
+	14<br>
+	15<br>
+	16<br>
+        17<br>
+        18<br>
+	19<br>
+	20<br>
+        <td width="97%" height="auto">
+		void setup(){<br>
+		<span>size(480,120); //ウインドウを描く<br>
+		}<br>
+		<br>
+		void draw(){<br>
+		<span>background(176,204,226);<br>
+		<span>translate(110,110);<br>
+		<span>stroke(138,138,125);<br>
+		<span>strokeWeight(70);<br>
+		<span>line(0,-35,0,-65); //胴体<br>
+		<span>noStroke();<br>
+		<span>fill(255);<br>
+		<span>ellipse(-17.5,-65,35,35); //左目のまわり<br>
+		<span>ellipse(17.5,-65,35,35);  //右目のまわり<br>
+		<span>arc(0,-65,70,70,0,PI);  //あご<br>
+		<span>fill(51,51,30);<br>
+		<span>ellipse(-14,-65,8,8);  //左目<br>
+		<span>ellipse(14,-65,8,8);  //右目<br>
+		<span>quad(0,-58,4,-51,0,-44,-4,-51); //くちばし<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+描いたフクロウをもう1羽描くと、コードの長さが倍になってしまいます。<br>
+そこで、フクロウのコードに<font color="red">関数</font>を導入します。<br>
+フクロウを描くコードを関数に入れてしまえば、そのコードはもうプログラム中に一度しか現れません。<br>
+
+<br>上記のコードに関数を導入してみましょう。<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+        7<br>
+        8<br>
+	9<br>
+	10<br>
+	11<br>
+        12<br>
+        13<br>
+	14<br>
+	15<br>
+	16<br>
+        17<br>
+        18<br>
+	19<br>
+	20<br>
+	21<br>
+        22<br>
+        23<br>
+	24<br>
+	25<br>
+	26<br>
+        27<br>
+        <td width="97%" height="auto">
+		void setup(){<br>
+		<span>size(480,120); //ウインドウを描く<br>
+		}<br>
+		<br>
+		void draw(){<br>
+		<span>background(176,204,226);<br>
+		<span>owl(110,110);<br>
+		<span>owl(180,110);<br>
+		}<br>
+		<br>
+		void owl(int x,int y){<br>
+		<span>pushMatrix(); //現在の座標系を保存<br>
+		<span>translate(x,y);<br>
+		<span>stroke(138,138,125);<br>
+		<span>strokeWeight(70);<br>
+		<span>line(0,-35,0,-65); //胴体<br>
+		<span>noStroke();<br>
+		<span>fill(255);<br>
+		<span>ellipse(-17.5,-65,35,35); //左目のまわり<br>
+		<span>ellipse(17.5,-65,35,35);  //右目のまわり<br>
+		<span>arc(0,-65,70,70,0,PI);  //あご<br>
+		<span>fill(51,51,30);<br>
+		<span>ellipse(-14,-65,8,8);  //左目<br>
+		<span>ellipse(14,-65,8,8);  //右目<br>
+		<span>quad(0,-58,4,-51,0,-44,-4,-51); //くちばし<br>
+		<span>popMatrix();  //元の座標系を取り出す<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+owl()関数にフクロウを描くコードをまとめることで、コードの長さを短くします。<br>
+フクロウのコードはdraw()から2回呼び出されるので、2回実行されます。<br>
+呼び出す際に、(x座標,y座標)の2つのパラメータを関数に渡すことで、2羽のフクロウを異なる位置に表示させます。
+<img src="フクロウ関数.png" alt="フクロウ関数" width=700 height=400 align="left">
+</body>
+</html>

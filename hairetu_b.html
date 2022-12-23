@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>配列 Bパターン</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>11章 配列</h1>
+<h2>配列 Bパターン</h2>
+<sub_title>変数の代わりに配列に</sub_title><br>
+<p align="left">1つか2つのものを扱う場合、変数を使ってきました。</p>
+ですが、数が10、20、30と増えていく度に変数を追加すると管理が難しくなってしまいます。<br>
+そこで、変数の代わりに配列を使っていきます。
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+        7<br>
+        8<br>
+	9<br>
+	10<br>
+	11<br>
+        12<br>
+        13<br>
+	14<br>
+	15<br>
+	16<br>
+        17<br>
+        18<br>
+	19<br>
+        <td width="97%" height="auto">
+		float[] x = new float[1000];図形を表示する数<br>
+		<br>
+		void setup(){<br>
+		<span>size(240,120); //ウインドウを描く<br>
+		<span>noStroke();<br>
+		<span>fill(255, 200);<br>
+		<span>for(int i = 0; i < x.length; i++){<br>
+		<span><span>x[i] = random(-500, 50); //x座標が-500から50の中でランダムで作成した図形が表示される<br>
+		<span>}<br>
+		}<br>
+		<br>
+		void draw(){<br>
+		<span>background(0);<br>
+		<span>for(int i = 0; i < x.length; i++){<br>
+		<span><span>x[i] += 0.5;<br>
+		<span><span>float y = i * 0.4;<br>
+		<span><span>rect(x[i], y, 10, 10);表示する図形<br>
+		<span>}<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+実行結果<br>
+<img src="配列-b.png" alt="配列B" width=700 height=400 align="left">
+変数で1000個のコードを1つずつ追加するより、配列を使うことでコードがすっきりになりました。<br>
+
+</body>
+</html>

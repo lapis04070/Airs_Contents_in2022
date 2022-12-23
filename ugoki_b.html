@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>動き Bパターン</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>8章 動き</h1>
+<h2>動き Bパターン</h2>
+<sub_title>乱数を使った不規則な動き</sub_title><br>
+<p align="left">乱数を使って画面上の図形を動かします。</p>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+        7<br>
+        8<br>
+	9<br>
+	10<br>
+	11<br>
+        12<br>
+        13<br>
+	14<br>
+	15<br>
+        <td width="97%" height="auto">
+		float speed = 2.5; //円の動く速さを設定<br>
+		int diameter = 20; <br>
+		float x;
+		float y;
+		<br>
+		<br>
+		void setup(){<br>
+		<span>size(240,120);<br>
+		<span>x = width/2; //円の初期位置の設定(真ん中で円が動き始めるように設定)<br>
+		<span>y = height/2; //円の初期位置の設定(真ん中で円が動き始めるように設定)<br>
+		}<br>
+		<br>
+		void draw(){<br>
+		<span>x += random(-speed, speed);<br>
+		<span>y += random(-speed, speed);<br>
+		<span>ellipse(x, y, diameter, diameter);<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+実行結果<br>
+<br>
+
+<img src="乱数B-1.png" width="400px" height="250px" align="left">
+<img src="乱数B-2.png" width="400px" height="250px" align="right">
+<div class="arrow"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+実行すると、左の画面が表示され、円が不規則な動きをし右の画像のようになる。<br>
+上記のプログラムのままだと、円がウインドウの外へ出てしまう。<br>
+<img src="乱数B-3.png" width="400px" height="250px" align="left">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+そこで、<font color="red">constrain()関数</font>を使うことで、xとyの値がウインドウの境界を越えないよう、制限を加えることができる。
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+        7<br>
+        8<br>
+	9<br>
+	10<br>
+	11<br>
+        12<br>
+        13<br>
+	14<br>
+	15<br>
+	16<br>
+	17<br>
+        <td width="97%" height="auto">
+		float speed = 2.5; //円の動く速さを設定<br>
+		int diameter = 20; <br>
+		float x;
+		float y;
+		<br>
+		<br>
+		void setup(){<br>
+		<span>size(240,120);<br>
+		<span>x = width/2; //円の初期位置の設定(真ん中で円が動き始めるように設定)<br>
+		<span>y = height/2; //円の初期位置の設定(真ん中で円が動き始めるように設定)<br>
+		}<br>
+		<br>
+		void draw(){<br>
+		<span>x += random(-speed, speed);<br>
+		<span>y += random(-speed, speed);<br>
+		<span><font color="red">x = constrain(x, 0, width);</font><br>
+		<span><font color="red">y = constrain(y, 0, height);</font><br>
+		<span>ellipse(x, y, diameter, diameter);<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

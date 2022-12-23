@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>for制御文</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>4章 変数</h1>
+<h2>繰り返し文　part2</h2>
+<sub_title>forループを使った正方形の描画</sub_title><br>
+<p align="left">forループを使って、正方形を描いてみましょう</p>
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+        <td width="97%" height="auto">
+		for(int i = 60;i < 300;i += 60) {<br>
+		　<span>rect(i,100,50,50);</span><br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+(i,100)の位置に縦50横50の正方形を描いていきます。<br>
+iにfor文の中で設定した60を代入します。<br>
+iが300になるまで、iに60ずつ足していきます。<br>
+
+<br>上記のfor文を図で表してみましょう<br>
+<div class="image">
+<img src="for文.png" alt="for文" width=800 height=400 align="left">
+<br>
+①　iに60を代入し、(60,100,50,50)の正方形を描きます<br>
+②　iに60を足し、(120,100,50,50)の正方形を描きます。<br>
+③　iに60を足し、(180,100,50,50)の正方形を描きます。<br>
+④　iに60を足し、(240,100,50,50)の正方形を描きます。<br>
+</div>
+<br> <br>
+</body>
+</html>
