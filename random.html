@@ -25,8 +25,8 @@
 	4<br>
         <td width="97%" height="auto">
 		void draw() {<br>
-		<span>float r = random(0,mouseX);</span><br>
-		<span>println(r);</span><br>
+		<span>float x = random(0,100);</span><br>
+		<span>println(x);</span><br>
 		}<br>
 		</td>
       </tr>
@@ -34,8 +34,9 @@
   </table>
 </div>
 <br>
-この例では、0からマウスのx座標の値の乱数をコンソールに出力するプログラムです。<br>
-このように、乱数は<font color="red">random(値の下限、値の上限)</font>の書式で書かれます。<br><br>
+この例では、0から100の間の乱数をコンソールに出力するプログラムです。<br>
+このように、乱数は<font color="red">random(値の下限、値の上限)</font>の書式で書かれます。<br>
+なおrandom()関数では必ず浮動小数点数を返すので入れる変数はfloat型で宣言することが必要です。<br>
 <br>
 </body>
 </html>
