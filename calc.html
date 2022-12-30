@@ -13,7 +13,7 @@
 <h2>計算</h2>
 <sub_title>変数と計算</sub_title><br>
 <p align="left">コードには+や*といった記号が多く使われています。</p>
-<p align="left">これらは演算子と呼ばれ、2つの数値の間に置き計算式を表します。</p><br>
+<p align="left">これらは演算子と呼ばれ、2つの数値や変数の間に置き計算式を表します。</p><br>
 <p align="center">基本的な演算子</p>
 
 <div align="center">
@@ -45,7 +45,19 @@
   </table>
 </div>
 <br>
-Processingでは算術演算子の優先順位があります。<br>
+
+<table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+		<span>int x = 1+1;<span>//int型の変数xに1+1を代入</span></span><br>
+		<span>x = x+5;<span>//2が入っているxに5を足してxに入れ直す。</span></span><br>
+		<span>println(x);//xの中身を出力する。今回は7</span></span><br>
+		</td>
+      </tr>
+    </tbody>
+  </table><br>
+その他に、Processingでは算術演算子の優先順位があります。<br>
 乗算、除算のほうが加算、減算よりも優先されるルールがあります。<br>
 また、カッコ()で囲んだ中は最も高い優先順位で処理されます。<br>
 頻繁に使用する式では簡単にかけるよう、以下のような短縮形も用意されています。<br><br>
@@ -60,6 +72,6 @@ Processingでは算術演算子の優先順位があります。<br>
 		</td>
       </tr>
     </tbody>
-  </table>
+  </table><br>
 </body>
 </html>
