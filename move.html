@@ -13,6 +13,8 @@
 <h2>スピードと方向</h2>
 <sub_title>図形の移動</sub_title><br>
 <p align="left">細かい動きを表現するには小数点の値を持つ数値を格納できるfloat型を使用します。</p>
+図形の座標を小数以下の値で増やしていくことで図形がなめらかに動いているように見えます。<br><br>
+
 
 <div align="center">
   <table border="1" style="border-collapse: collapse" width="100%">
@@ -43,7 +45,7 @@
 		void draw() {<br>
 		<span>background(0);</span><br>
 		<span>x += speed;<span>//xに加算</span><br>
-		<span>arc(x,60,40,40,0.52,5.76);</span><br>
+		<span>arc(x,60,40,40,0.52,5.76);<span>//円弧を描く</span><br>
 		}<br>
 		</td>
       </tr>
