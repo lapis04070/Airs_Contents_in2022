@@ -15,6 +15,8 @@ lib.ssMetadata = [
 		{name:"for_atlas_10", frames: [[0,0,1048,592],[0,594,1048,592],[0,1188,1048,592]]},
 		{name:"for_atlas_11", frames: [[810,0,1048,592],[810,594,1048,592],[0,1188,1048,592],[0,0,808,1012]]}
 ];
+
+
 (lib.AnMovieClip = function(){
 	this.actionFrames = [];
 	this.ignorePause = false;
@@ -31,18 +33,31 @@ lib.ssMetadata = [
 		cjs.MovieClip.prototype.stop.call(this);
 	}
 }).prototype = p = new cjs.MovieClip();
+// symbols:
+
+
+
 (lib.CachedBmp_84 = function() {
 	this.initialize(ss["for_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
+
+
+
 (lib.CachedBmp_83 = function() {
 	this.initialize(ss["for_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
+
+
+
 (lib.CachedBmp_82 = function() {
 	this.initialize(ss["for_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
+
+
+
 (lib.CachedBmp_81 = function() {
 	this.initialize(ss["for_atlas_11"]);
 	this.gotoAndStop(0);
@@ -1213,6 +1228,7 @@ an.bootstrapCallback=function(fnCallback) {
 		}
 	}
 };
+
 an.compositions = an.compositions || {};
 an.compositions['4386729912510541B49EBDB3FE8E995E'] = {
 	getStage: function() { return exportRoot.stage; },
@@ -1220,15 +1236,19 @@ an.compositions['4386729912510541B49EBDB3FE8E995E'] = {
 	getSpriteSheet: function() { return ss; },
 	getImages: function() { return img; }
 };
+
 an.compositionLoaded = function(id) {
 	an.bootcompsLoaded.push(id);
 	for(var j=0; j<an.bootstrapListeners.length; j++) {
 		an.bootstrapListeners[j](id);
 	}
 }
+
 an.getComposition = function(id) {
 	return an.compositions[id];
 }
+
+
 an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
 	var lastW, lastH, lastS=1;		
 	window.addEventListener('resize', resizeCanvas);		
@@ -1289,5 +1309,7 @@ an.handleFilterCache = function(event) {
 		}
 	}
 }
+
+
 })(createjs = createjs||{}, AdobeAn = AdobeAn||{});
 var createjs, AdobeAn;
