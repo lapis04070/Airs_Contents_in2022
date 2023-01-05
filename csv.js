@@ -3,13 +3,13 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"csv_atlas_1", frames: [[0,0,1443,892],[0,894,1443,892]]},
-		{name:"csv_atlas_2", frames: [[0,0,1443,892],[0,894,1443,892]]},
-		{name:"csv_atlas_3", frames: [[0,0,1443,892],[0,894,1443,892]]},
-		{name:"csv_atlas_4", frames: [[583,951,328,93],[1466,0,528,424],[0,768,1354,181],[0,951,581,71],[1313,426,668,330],[0,0,1464,181],[1652,930,258,187],[1356,930,294,213],[0,183,1449,181],[0,366,1311,199],[0,567,1311,199],[1356,758,555,170]]},
+		{name:"csv_atlas_1", frames: [[0,1615,328,93],[1356,567,528,424],[0,768,1354,181],[670,1540,581,71],[0,951,668,330],[1253,1540,581,71],[670,951,668,330],[670,1613,581,71],[1340,993,668,330],[1253,1613,581,71],[0,1283,668,330],[557,0,1464,181],[1523,1325,258,187],[1227,1325,294,213],[557,183,1449,181],[557,366,1311,199],[0,567,1311,199],[0,0,555,486],[670,1283,555,170]]},
+		{name:"csv_atlas_2", frames: [[0,0,1580,270],[552,1088,1091,270],[0,544,1566,270],[0,272,1570,270],[0,1640,1663,181],[0,816,1528,270],[0,1088,550,550]]},
+		{name:"csv_atlas_3", frames: [[0,1236,1618,270],[0,1508,1584,270],[0,692,1636,270],[0,0,1073,690],[0,964,1620,270]]},
+		{name:"csv_atlas_4", frames: [[0,0,1443,892],[0,894,1443,892]]},
 		{name:"csv_atlas_5", frames: [[0,0,1443,892],[0,894,1443,892]]},
-		{name:"csv_atlas_6", frames: [[0,1236,1618,270],[0,1508,1584,270],[0,692,1636,270],[0,0,1073,690],[0,964,1620,270]]},
-		{name:"csv_atlas_7", frames: [[0,0,1580,270],[0,1551,1091,270],[0,1823,1552,181],[0,272,1570,270],[0,1368,1663,181],[0,544,1528,270],[552,816,555,486],[0,816,550,550]]},
+		{name:"csv_atlas_6", frames: [[0,0,1443,892],[0,894,1443,892]]},
+		{name:"csv_atlas_7", frames: [[0,0,1443,892],[0,894,1443,892]]},
 		{name:"csv_atlas_8", frames: [[0,0,1443,892],[0,894,1443,892]]}
 ];
 
@@ -35,246 +35,288 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_32 = function() {
-	this.initialize(ss["csv_atlas_1"]);
+	this.initialize(ss["csv_atlas_8"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_31 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_30 = function() {
-	this.initialize(ss["csv_atlas_4"]);
+	this.initialize(ss["csv_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_29 = function() {
-	this.initialize(ss["csv_atlas_4"]);
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedBmp_28 = function() {
 	this.initialize(ss["csv_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
+(lib.CachedBmp_28 = function() {
+	this.initialize(ss["csv_atlas_8"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.CachedBmp_27 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_26 = function() {
-	this.initialize(ss["csv_atlas_2"]);
+	this.initialize(ss["csv_atlas_7"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_25 = function() {
-	this.initialize(ss["csv_atlas_4"]);
+	this.initialize(ss["csv_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
+(lib.CachedBmp_38 = function() {
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_37 = function() {
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.CachedBmp_24 = function() {
-	this.initialize(ss["csv_atlas_2"]);
+	this.initialize(ss["csv_atlas_7"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_23 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_2"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
+(lib.CachedBmp_36 = function() {
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_35 = function() {
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.CachedBmp_22 = function() {
-	this.initialize(ss["csv_atlas_3"]);
+	this.initialize(ss["csv_atlas_6"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_21 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_2"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
+(lib.CachedBmp_34 = function() {
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_33 = function() {
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.CachedBmp_20 = function() {
-	this.initialize(ss["csv_atlas_3"]);
+	this.initialize(ss["csv_atlas_6"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_19 = function() {
-	this.initialize(ss["csv_atlas_6"]);
+	this.initialize(ss["csv_atlas_3"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_18 = function() {
-	this.initialize(ss["csv_atlas_4"]);
-	this.gotoAndStop(3);
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_17 = function() {
-	this.initialize(ss["csv_atlas_4"]);
-	this.gotoAndStop(4);
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_16 = function() {
-	this.initialize(ss["csv_atlas_8"]);
+	this.initialize(ss["csv_atlas_5"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_15 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_2"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_14 = function() {
-	this.initialize(ss["csv_atlas_8"]);
+	this.initialize(ss["csv_atlas_5"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_13 = function() {
-	this.initialize(ss["csv_atlas_6"]);
+	this.initialize(ss["csv_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_12 = function() {
-	this.initialize(ss["csv_atlas_5"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_11 = function() {
-	this.initialize(ss["csv_atlas_6"]);
+	this.initialize(ss["csv_atlas_3"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_10 = function() {
-	this.initialize(ss["csv_atlas_5"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_9 = function() {
-	this.initialize(ss["csv_atlas_4"]);
-	this.gotoAndStop(5);
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_8 = function() {
-	this.initialize(ss["csv_atlas_4"]);
-	this.gotoAndStop(6);
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_7 = function() {
-	this.initialize(ss["csv_atlas_4"]);
-	this.gotoAndStop(7);
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_6 = function() {
-	this.initialize(ss["csv_atlas_6"]);
+	this.initialize(ss["csv_atlas_3"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_5 = function() {
-	this.initialize(ss["csv_atlas_4"]);
-	this.gotoAndStop(8);
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_4 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_2"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_3 = function() {
-	this.initialize(ss["csv_atlas_6"]);
+	this.initialize(ss["csv_atlas_3"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_2 = function() {
-	this.initialize(ss["csv_atlas_4"]);
-	this.gotoAndStop(9);
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_1 = function() {
-	this.initialize(ss["csv_atlas_4"]);
-	this.gotoAndStop(10);
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.名称未設定1 = function() {
-	this.initialize(ss["csv_atlas_7"]);
-	this.gotoAndStop(6);
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.名称未設定3 = function() {
-	this.initialize(ss["csv_atlas_7"]);
-	this.gotoAndStop(7);
+	this.initialize(ss["csv_atlas_2"]);
+	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.C_waku = function() {
-	this.initialize(ss["csv_atlas_4"]);
-	this.gotoAndStop(11);
+	this.initialize(ss["csv_atlas_1"]);
+	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -444,49 +486,67 @@ if (reversed == null) { reversed = false; }
 	this.instance_19 = new lib.CachedBmp_15();
 	this.instance_19.setTransform(60.8,603.85,0.5,0.5);
 
-	this.instance_20 = new lib.CachedBmp_20();
-	this.instance_20.setTransform(59.3,78.55,0.5,0.5);
+	this.instance_20 = new lib.CachedBmp_34();
+	this.instance_20.setTransform(788.05,319.2,0.5,0.5);
 
-	this.instance_21 = new lib.CachedBmp_19();
-	this.instance_21.setTransform(60.8,603.85,0.5,0.5);
+	this.instance_21 = new lib.CachedBmp_33();
+	this.instance_21.setTransform(714,369.5,0.5,0.5);
 
-	this.instance_22 = new lib.CachedBmp_22();
+	this.instance_22 = new lib.CachedBmp_20();
 	this.instance_22.setTransform(59.3,78.55,0.5,0.5);
 
-	this.instance_23 = new lib.CachedBmp_21();
+	this.instance_23 = new lib.CachedBmp_19();
 	this.instance_23.setTransform(60.8,603.85,0.5,0.5);
 
-	this.instance_24 = new lib.CachedBmp_24();
-	this.instance_24.setTransform(59.3,78.55,0.5,0.5);
+	this.instance_24 = new lib.CachedBmp_36();
+	this.instance_24.setTransform(788.05,319.2,0.5,0.5);
 
-	this.instance_25 = new lib.CachedBmp_23();
-	this.instance_25.setTransform(60.8,603.85,0.5,0.5);
+	this.instance_25 = new lib.CachedBmp_35();
+	this.instance_25.setTransform(714,369.5,0.5,0.5);
 
-	this.instance_26 = new lib.CachedBmp_26();
+	this.instance_26 = new lib.CachedBmp_22();
 	this.instance_26.setTransform(59.3,78.55,0.5,0.5);
 
-	this.instance_27 = new lib.CachedBmp_25();
+	this.instance_27 = new lib.CachedBmp_21();
 	this.instance_27.setTransform(60.8,603.85,0.5,0.5);
 
-	this.instance_28 = new lib.CachedBmp_30();
-	this.instance_28.setTransform(858.5,141.05,0.5,0.5);
+	this.instance_28 = new lib.CachedBmp_38();
+	this.instance_28.setTransform(788.05,319.2,0.5,0.5);
 
-	this.instance_29 = new lib.CachedBmp_29();
-	this.instance_29.setTransform(808.5,223.6,0.5,0.5);
+	this.instance_29 = new lib.CachedBmp_37();
+	this.instance_29.setTransform(714,369.5,0.5,0.5);
 
-	this.instance_30 = new lib.CachedBmp_28();
+	this.instance_30 = new lib.CachedBmp_24();
 	this.instance_30.setTransform(59.3,78.55,0.5,0.5);
 
-	this.instance_31 = new lib.CachedBmp_27();
+	this.instance_31 = new lib.CachedBmp_23();
 	this.instance_31.setTransform(60.8,603.85,0.5,0.5);
 
-	this.instance_32 = new lib.CachedBmp_32();
+	this.instance_32 = new lib.CachedBmp_26();
 	this.instance_32.setTransform(59.3,78.55,0.5,0.5);
 
-	this.instance_33 = new lib.CachedBmp_31();
+	this.instance_33 = new lib.CachedBmp_25();
 	this.instance_33.setTransform(60.8,603.85,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_2}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_3}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_5}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_11},{t:this.instance_10}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_13},{t:this.instance_12}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_15},{t:this.instance_14}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_21},{t:this.instance_20}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_23},{t:this.instance_22}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_25},{t:this.instance_24}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_27},{t:this.instance_26}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_31},{t:this.instance_30},{t:this.instance_29},{t:this.instance_28}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_33},{t:this.instance_32}]},1).wait(1));
+	this.instance_34 = new lib.CachedBmp_30();
+	this.instance_34.setTransform(858.5,141.05,0.5,0.5);
+
+	this.instance_35 = new lib.CachedBmp_29();
+	this.instance_35.setTransform(808.5,223.6,0.5,0.5);
+
+	this.instance_36 = new lib.CachedBmp_28();
+	this.instance_36.setTransform(59.3,78.55,0.5,0.5);
+
+	this.instance_37 = new lib.CachedBmp_27();
+	this.instance_37.setTransform(60.8,603.85,0.5,0.5);
+
+	this.instance_38 = new lib.CachedBmp_32();
+	this.instance_38.setTransform(59.3,78.55,0.5,0.5);
+
+	this.instance_39 = new lib.CachedBmp_31();
+	this.instance_39.setTransform(60.8,603.85,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_2}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_3}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_5}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_11},{t:this.instance_10}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_13},{t:this.instance_12}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_15},{t:this.instance_14}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_23},{t:this.instance_22},{t:this.instance_21},{t:this.instance_20}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_27},{t:this.instance_26},{t:this.instance_25},{t:this.instance_24}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_31},{t:this.instance_30},{t:this.instance_29},{t:this.instance_28}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_33},{t:this.instance_32}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_37},{t:this.instance_36},{t:this.instance_35},{t:this.instance_34}]},1).to({state:[{t:this.instance_1},{t:this.next},{t:this.instance_4},{t:this.instance_39},{t:this.instance_38}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -501,14 +561,14 @@ lib.properties = {
 	color: "#FFFFD5",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/csv_atlas_1.png?1672934400927", id:"csv_atlas_1"},
-		{src:"images/csv_atlas_2.png?1672934400927", id:"csv_atlas_2"},
-		{src:"images/csv_atlas_3.png?1672934400927", id:"csv_atlas_3"},
-		{src:"images/csv_atlas_4.png?1672934400927", id:"csv_atlas_4"},
-		{src:"images/csv_atlas_5.png?1672934400928", id:"csv_atlas_5"},
-		{src:"images/csv_atlas_6.png?1672934400928", id:"csv_atlas_6"},
-		{src:"images/csv_atlas_7.png?1672934400928", id:"csv_atlas_7"},
-		{src:"images/csv_atlas_8.png?1672934400928", id:"csv_atlas_8"}
+		{src:"images/csv_atlas_1.png", id:"csv_atlas_1"},
+		{src:"images/csv_atlas_2.png", id:"csv_atlas_2"},
+		{src:"images/csv_atlas_3.png", id:"csv_atlas_3"},
+		{src:"images/csv_atlas_4.png", id:"csv_atlas_4"},
+		{src:"images/csv_atlas_5.png", id:"csv_atlas_5"},
+		{src:"images/csv_atlas_6.png", id:"csv_atlas_6"},
+		{src:"images/csv_atlas_7.png", id:"csv_atlas_7"},
+		{src:"images/csv_atlas_8.png", id:"csv_atlas_8"}
 	],
 	preloads: []
 };
