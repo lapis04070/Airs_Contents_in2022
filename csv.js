@@ -6,11 +6,11 @@ lib.ssMetadata = [
 		{name:"csv_atlas_1", frames: [[0,0,1443,892],[0,894,1443,892]]},
 		{name:"csv_atlas_2", frames: [[0,0,1443,892],[0,894,1443,892]]},
 		{name:"csv_atlas_3", frames: [[0,0,1443,892],[0,894,1443,892]]},
-		{name:"csv_atlas_4", frames: [[0,0,1443,892],[0,894,1443,892]]},
+		{name:"csv_atlas_4", frames: [[583,951,328,93],[1466,0,528,424],[0,768,1354,181],[0,951,581,71],[1313,426,668,330],[0,0,1464,181],[1652,930,258,187],[1356,930,294,213],[0,183,1449,181],[0,366,1311,199],[0,567,1311,199],[1356,758,555,170]]},
 		{name:"csv_atlas_5", frames: [[0,0,1443,892],[0,894,1443,892]]},
 		{name:"csv_atlas_6", frames: [[0,1236,1618,270],[0,1508,1584,270],[0,692,1636,270],[0,0,1073,690],[0,964,1620,270]]},
-		{name:"csv_atlas_7", frames: [[583,951,328,93],[1466,0,528,424],[0,768,1354,181],[0,951,581,71],[1313,426,668,330],[0,0,1464,181],[1652,930,258,187],[1356,930,294,213],[0,183,1449,181],[0,366,1311,199],[0,567,1311,199],[1356,758,555,170]]},
-		{name:"csv_atlas_8", frames: [[0,0,1580,270],[0,1551,1091,270],[0,1823,1552,181],[0,272,1570,270],[0,1368,1663,181],[0,544,1528,270],[552,816,555,486],[0,816,550,550]]}
+		{name:"csv_atlas_7", frames: [[0,0,1580,270],[0,1551,1091,270],[0,1823,1552,181],[0,272,1570,270],[0,1368,1663,181],[0,544,1528,270],[552,816,555,486],[0,816,550,550]]},
+		{name:"csv_atlas_8", frames: [[0,0,1443,892],[0,894,1443,892]]}
 ];
 
 
@@ -42,21 +42,21 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_31 = function() {
-	this.initialize(ss["csv_atlas_8"]);
+	this.initialize(ss["csv_atlas_7"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_30 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_29 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
@@ -70,7 +70,7 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_27 = function() {
-	this.initialize(ss["csv_atlas_8"]);
+	this.initialize(ss["csv_atlas_7"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
@@ -84,7 +84,7 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_25 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
@@ -98,7 +98,7 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_23 = function() {
-	this.initialize(ss["csv_atlas_8"]);
+	this.initialize(ss["csv_atlas_7"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
@@ -112,7 +112,7 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_21 = function() {
-	this.initialize(ss["csv_atlas_8"]);
+	this.initialize(ss["csv_atlas_7"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
@@ -133,35 +133,35 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_18 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_17 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_16 = function() {
-	this.initialize(ss["csv_atlas_4"]);
+	this.initialize(ss["csv_atlas_8"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_15 = function() {
-	this.initialize(ss["csv_atlas_8"]);
+	this.initialize(ss["csv_atlas_7"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_14 = function() {
-	this.initialize(ss["csv_atlas_4"]);
+	this.initialize(ss["csv_atlas_8"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
@@ -196,21 +196,21 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_9 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_8 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_7 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
@@ -224,14 +224,14 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_5 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_4 = function() {
-	this.initialize(ss["csv_atlas_8"]);
+	this.initialize(ss["csv_atlas_7"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
@@ -245,35 +245,35 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_2 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_1 = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.名称未設定1 = function() {
-	this.initialize(ss["csv_atlas_8"]);
+	this.initialize(ss["csv_atlas_7"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.名称未設定3 = function() {
-	this.initialize(ss["csv_atlas_8"]);
+	this.initialize(ss["csv_atlas_7"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.C_waku = function() {
-	this.initialize(ss["csv_atlas_7"]);
+	this.initialize(ss["csv_atlas_4"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
