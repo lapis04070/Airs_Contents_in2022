@@ -501,14 +501,14 @@ lib.properties = {
 	color: "#FFFFD5",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/csv_atlas_1.png", id:"csv_atlas_1"},
-		{src:"images/csv_atlas_2.png", id:"csv_atlas_2"},
-		{src:"images/csv_atlas_3.png", id:"csv_atlas_3"},
-		{src:"images/csv_atlas_4.png", id:"csv_atlas_4"},
-		{src:"images/csv_atlas_5.png", id:"csv_atlas_5"},
-		{src:"images/csv_atlas_6.png", id:"csv_atlas_6"},
-		{src:"images/csv_atlas_7.png", id:"csv_atlas_7"},
-		{src:"images/csv_atlas_8.png", id:"csv_atlas_8"}
+		{src:"images/csv_atlas_1.png?1672934400927", id:"csv_atlas_1"},
+		{src:"images/csv_atlas_2.png?1672934400927", id:"csv_atlas_2"},
+		{src:"images/csv_atlas_3.png?1672934400927", id:"csv_atlas_3"},
+		{src:"images/csv_atlas_4.png?1672934400927", id:"csv_atlas_4"},
+		{src:"images/csv_atlas_5.png?1672934400928", id:"csv_atlas_5"},
+		{src:"images/csv_atlas_6.png?1672934400928", id:"csv_atlas_6"},
+		{src:"images/csv_atlas_7.png?1672934400928", id:"csv_atlas_7"},
+		{src:"images/csv_atlas_8.png?1672934400928", id:"csv_atlas_8"}
 	],
 	preloads: []
 };
