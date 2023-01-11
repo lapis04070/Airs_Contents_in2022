@@ -2826,12 +2826,12 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 			container.style.width = w * sRatio + 'px';				
 			container.style.height = h * sRatio + 'px';			
 		});
-		stage.scaleX = pRatio*sRatio;			
-		stage.scaleY = pRatio*sRatio;
+		stage_mon.scaleX = pRatio*sRatio;			
+		stage_mon.scaleY = pRatio*sRatio;
 		lastW = iw; lastH = ih; lastS = sRatio;            
-		stage.tickOnUpdate = false;            
-		stage.update();            
-		stage.tickOnUpdate = true;		
+		stage_mon.tickOnUpdate = false;            
+		stage_mon.update();            
+		stage_mon.tickOnUpdate = true;		
 	}
 }
 an.handleSoundStreamOnTick = function(event) {
@@ -2860,4 +2860,4 @@ an.handleFilterCache = function(event) {
 
 
 })(createjs = createjs||{}, AdobeAn = AdobeAn||{});
-var createjs, AdobeAn;
+var createjs, AdobeAn_mon;
