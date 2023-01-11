@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>ArrayList Bパターン</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>15章 ArrayList　Bパターン</h1>
+<h2>ArrayList Bパターン</h2>
+<sub_title>複数のオブジェクトの管理</sub_title><br>
+<p align="left">複数のオブジェクトを管理する際に、あらかじめ要素の数を決めておく必要がありますが、この問題を解決するオブジェクトがArrayListオブジェクトです。</p>
+今回は、複数のOwlオブジェクトとChickenオブジェクトを一緒に管理するために、14章のインターフェースを使用して、ArrayListオブジェクトで管理していきます。
+<h3><font color="red">step.1</font></h3>
+インターフェースのBパターンで制作したものを使用していきます。(processing)<br>
+<img src="結果.png" alt="結果" width=1200 height=300 align="left">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br
+<br>
+<h3><font color="red">step.2</font></h3>
+Bird,Chicken,Owlタブはそのままにし、インターフェースBタブのみを変更します。(インターフェースBだとややこしいので、ArrayListBに変更します。)
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+        7<br>
+        8<br>
+	9<br>
+	10<br>
+	11<br>
+        12<br>
+        13<br>
+	14<br>
+	15<br>
+	16<br>
+        17<br>
+        18<br>
+        <td width="97%" height="auto">
+		<font color="red">ArrayList<Bird>arrayList = new ArrayList<Bird>();</font><br>
+		<br>
+		void setup(){<br>
+		<span>size(770,120); //ウインドウを描く<br>
+		<span>background(176, 204, 226);<br>
+		<span>for(int i = 0; i < 11; i++){ //表示する数を指定<br>
+		<span><span>if((i % 2) == 0){ //iを2で割った時の余りが0か1で判断できる。<br>
+		<span><span>arrayList.add(new Owl(35 + i * 70, 110));<br>
+		<span><span>} else { //余りが0ではない場合は、下のChickenが実行<br>
+		<span><span>arrayList.add(new Chicken(35 + i * 70, 110));<br>
+		<span><span>}<br>
+		<span>}<br>
+		}<br>
+		void draw(){<br>
+		<span>for(Bird bird:arrayList){<br>
+		<span><span>bird.display();<br>
+		<span><br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+あらかじめ要素の数を決める必要がありましたが、ArrayListオブジェクトによって解決されました。
+
+</body>
+</html>
