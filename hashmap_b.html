@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>HashMap Bパターン</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>16章 HashMap　Bパターン</h1>
+<h2>HashMap Bパターン</h2>
+<sub_title>HashMap</sub_title><br>
+<p align="left">HashMapオブジェクトは、Processingで標準的に利用できるので、HashMapクラスを定義する必要はありません。</p>
+実際に、HashMapオブジェクトを生成してみましょう<br>
+今回は、チキン(Chicken)を親クラスにし継承していきます。<br>
+キーの名前は「bird」にします。<br>
+<h3><font color="red">step.1</font></h3>
+始めに表示するチキン(Chicken)クラスを定義します。<br>
+タブの名前を「Chicken」にします。<br>
+<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+	4<br>
+        5<br>
+        6<br>
+	7<br>
+	8<br>
+	9<br>
+        10<br>
+        11<br>
+	12<br>
+	13<br>
+	14<br>
+        15<br>
+        16<br>
+	17<br>
+	18<br>
+	19<br>
+        20<br>
+        21<br>
+        22<br>
+        23<br>
+        24<br>
+        25<br>
+	26<br>
+        27<br>
+        28<br>
+	29<br>
+        <td width="97%" height="auto">
+		class Chicken{<br>
+		<span>int x;<br>
+		<span>int y;<br>
+		<span>String name;<br>
+		<span>Chicken(int tempX,int tempY){<br>
+		<span><span>x = tempX;<br>
+		<span><span>y = tempY;<br>
+		<span>}<br>
+		<br>
+		<span>void display(){<br>
+		<span><span>pushMatrix();<br>
+		<span><span>translate(x,y);<br>
+		<span><span>stroke(255);<br>
+		<span><span>strokeWeight(50);<br>
+		<span><span>line(0,-35,0,-65);<br>
+		<span><span>noStroke();<br>
+		<span><span>fill(255);<br>
+		<span><span>arc(0, -30, 70, 70, PI, TWO_PI);<br>
+		<span><span>fill(51, 51, 30);<br>
+		<span><span>ellipse(-15, -60, 8, 8);<br>
+		<span><span>ellipse( 15, -60, 8, 8);<br>
+		<span><span>fill(255, 255, 0);<br>
+		<span><span>quad(0, -65, 15, -51, 0, -45, -15, -51);<br>
+		<span><span>fill(255, 0, 0);<br>
+		<span><span>quad(0, -105, 5, -90, 0, -80, -5, -90);<br>
+		<span><span>quad(0, -45, 5, -30, 0, -20, -5, -30);<br>
+		<span><span>popMatrix();<br>
+		<span>}<br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h3><font color="red">step.2</font></h3>
+次に、HashMapオブジェクトを生成します。<br>
+タブの名前を「hashmap」にします。<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+	4<br>
+        5<br>
+	6<br>
+        7<br>
+	8<br>
+	9<br>
+        10<br>
+        11<br>
+        <td width="97%" height="auto">
+		HashMap<String, Chicken> hashMap = new HashMap<String, Chicken>();<br>
+		<br>
+		void setup(){<br>
+		<span>size(480, 120);<br>
+		<span>background(176, 204, 226);<br>
+		<span>hashMap.put("bird",new Chicken(50, 110));<br>
+		}<br>
+		void draw(){<br>
+		<span>Chicken chicken = hashMap.get("bird");<br>
+		<span>chicken.display();<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<img src="hashmap.png" alt="HashMap" width=400 height=200 align="left">
+
+</body>
+</html>
