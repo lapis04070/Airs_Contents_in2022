@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>継承 Bパターン</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>17章 継承　Bパターン</h1>
+<h2>継承 Bパターン</h2>
+<sub_title>継承</sub_title><br>
+<p align="left">親クラスを継承し、子クラスを作ることができます。親クラスを継承することによって、子クラスは親クラスのフィールドとメソッドをすべて引き継ぐことができます。</p>
+実際に、親クラスと子クラスを作成し継承してみましょう。<br>
+今回は、フクロウ(Owl)を親クラスにし継承していきます。<br>
+<h3><font color="red">step.1</font></h3>
+始めに親クラスのフクロウを作成します。<br>
+タブの名前を「Owl」にします。<br>
+<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+	4<br>
+        5<br>
+        6<br>
+	7<br>
+	8<br>
+	9<br>
+        10<br>
+        11<br>
+	12<br>
+	13<br>
+	14<br>
+        15<br>
+        16<br>
+	17<br>
+	18<br>
+	19<br>
+        20<br>
+        21<br>
+        22<br>
+        23<br>
+        24<br>
+        25<br>
+	26<br>
+        <td width="97%" height="auto">
+		class Owl{<br>
+		<span>int x;<br>
+		<span>int y;<br>
+		<span>Owl(int tempX,int tempY){<br>
+		<span><span>x = tempX;<br>
+		<span><span>y = tempY;<br>
+		<span>}<br>
+		<br>
+		<span>void display(){<br>
+		<span><span>pushMatrix();<br>
+		<span><span>translate(x,y);<br>
+		<span><span>stroke(138,138,125);<br>
+		<span><span>strokeWeight(70);<br>
+		<span><span>line(0,-35,0,-65);<br>
+		<span><span>noStroke();<br>
+		<span><span>fill(255);<br>
+		<span><span>ellipse(-17.5,-65,35,35);<br>
+		<span><span>ellipse(17.5,-65,35,35);<br>
+		<span><span>arc(0,-65,70,70,0,PI);<br>
+		<span><span>fill(51,51,30);<br>
+		<span><span>ellipse(-14,-65,8,8);<br>
+		<span><span>ellipse(14,-65,8,8);<br>
+		<span><span>quad(0,-58,4,-51,0,-44,-4,-51);<br>
+		<span><span>popMatrix();<br>
+		<span>}<br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h3><font color="red">step.2</font></h3>
+次に、子クラスを定義します。タブ名は「SubOwl」にします。<br>
+SubOwlのクラス名を入力する際に、親クラスを継承していることを示すために、<font color="red">extends Owl</font>をクラス名の後に記述します。<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+	4<br>
+        5<br>
+        <td width="97%" height="auto">
+		class SubOwl extends Owl{<br>
+		<span>SubOwl(int tempX, int tempY){<br>
+		<span><span>super(tempX,tempY);<br>
+		<span>}<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+よって、親クラスと同じ状態やメソッドを持った、子クラスが完成しました。<br>
+継承したことで、SubOwlの中身は、少ないコードになっております。<br>
+<h3><font color="red">step.3</font></h3>
+最後に、SubOwlオブジェクトを生成してみます。<br>
+タブ名は「keisyou」にします。<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+	4<br>
+        5<br>
+	6<br>
+        7<br>
+	8<br>
+	9<br>
+        10<br>
+        <td width="97%" height="auto">
+		<font color="red">SubOwl owl;</font><br>
+		<br>
+		void setup(){<br>
+		<span>size(480,120);<br>
+		<span>owl = new <font color="red">SubOwl</font>(110,110);<br>
+		}<br>
+		<br>
+		void draw()<br>
+		<span>owl.display();<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<img src="継承.png" alt="継承" width=600 height=200 align="left">
+
+</body>
+</html>
