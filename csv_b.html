@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>CSV Bパターン</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>12章 CSV　Bパターン</h1>
+<h2>CSV Bパターン</h2>
+<sub_title>CSVファイルを作成&読む</sub_title><br>
+<p align="left">今回は、CSVファイルを作成し、作成したファイルを読み込んでみます。</p>
+<h3><font color="red">step.1</font></h3>
+始めに、読み込むためのCSVファイルを作成していきます。<br>
+excelを使用していきます。<br>
+作成したファイル名は、sample.csvにします。<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+	4<br>
+        <td width="97%" height="auto">
+		1999<span>23<span>6<span>23<br>
+		2000<span>22<span>7<span>0<br>
+		2001<span>21<span>9<span>2<br>
+		2002<span>20<span>8<span>0</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<h3><font color="red">step.2</font></h3>
+作成したCSVファイルを読み込んでいきます。<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+        4<br>
+	5<br>
+        6<br>
+	7<br>
+        8<br>
+	9<br>
+        10<br>
+	11<br>
+        12<br>
+        <td width="97%" height="auto">
+		Table data;<br>
+		<br>
+		void setup(){<br>
+		<span>data = loadTable("sample.csv");//読み込むCSVファイル名<br>
+		<span>for(int i=0; i < data.getRowCount(); i++){<br>
+		<span><span>int year = data.getInt(i,0);//生まれた年<br>
+		<span><span>int age = data.getInt(i,1);//年齢<br>
+		<span><span>int morning = data.getInt(i,2);//朝起きる時間<br>
+		<span><span>int night = data.getInt(i,3);//夜寝る時間<br>
+		<span><span>println(year,age,morning,night);<br>
+		<span>}<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+実行結果<br>
+<img src="csv.png" alt="CSV" width=500 height=200 align="left">
+<br>
+</body>
+</html>
