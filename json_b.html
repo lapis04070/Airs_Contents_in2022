@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>JSON Bパターン</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>12章 JSON　Bパターン</h1>
+<h2>JSON Bパターン</h2>
+<sub_title>JSONファイルを作成&読む</sub_title><br>
+<p align="left">今回は、JSONファイルを作成し、作成したファイルを読み込んでみます。</p>
+<h3><font color="red">step.1</font></h3>
+始めに、読み込むためのJSONファイルを作成していきます。<br>
+メモ帳を使用していきます。<br>
+作成したファイル名は、sample.jsonにします。	<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+	4<br>
+        5<br>
+        <td width="97%" height="auto">
+		{<br>
+		<span><span>"name": "myname",<br>
+		<span><span>"age": 22,<br>
+		<span><span>"sport": "soccer"<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<h3><font color="red">step.2</font></h3>
+作成したJSONファイルを読み込んでいきます。<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+        4<br>
+	5<br>
+        6<br>
+	7<br>
+        8<br>
+
+        <td width="97%" height="auto">
+		JSONObject human;<br>
+		<br>
+		void setup(){<br>
+		<span>human=loadJSONObject("sample.json");//読み込むJSONファイル名<br>
+		<span>int age= human.getInt("age");<br>
+		<span>String sport=human.getString("sport");<br>
+		<span>println(name + age + <font color="red">"歳"</font> + <font color="red">"好きなスポーツは"</font> + sport);<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+実行結果<br>
+<img src="json.png" alt="JSON" width=500 height=200 align="left">
+<br>
+"name","age"の次に"歳"を加えることで、myname22歳に<br>
+"sport"の前に"好きなスポーツは"と加えることで、文になるように作成しました。<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+</html>
