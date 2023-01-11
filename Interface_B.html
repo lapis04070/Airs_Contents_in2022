@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>インターフェース Bパターン</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>14章 インターフェース　Bパターン</h1>
+<h2>インターフェース Bパターン</h2>
+<sub_title>配列の活用</sub_title><br>
+<p align="left">1つの配列で2つのオブジェクトを管理できるインターフェースを使って、2つのオブジェクトを交互に表示してみます。</p>
+<h3><font color="red">step.1</font></h3>
+始めに、ChickenタブとOwlタブを作成し、クラスの定義を行います。(ChickenとOwlの作成は省きます。)<br>
+<img src="チキン.png" alt="チキンクラス" width=200 height=300 align="left">
+<span>
+<img src="フクロウ.png" alt="フクロウクラス" width=200 height=300 align="center">
+<br>
+<h3><font color="red">step.2-1</font></h3>
+次に、OwlオブジェクトとChickenオブジェクトの2つを管理するためにインターフェースを定義し、これをOwlオブジェクトとChickenオブジェクトに実装します。インターフェースの名前を「Bird」にするため、「Bird」タブを追加します。
+
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+
+        <td width="97%" height="auto">
+		interface Bird{<br>
+		<span>void display();<br>
+		}<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<h3><font color="red">step.2-2</font></h3>
+OwlオブジェクトとChickenオブジェクトの2つを管理するためにインターフェースを定義したので、OwlオブジェクトとChickenオブジェクトに実装していきます。<br>
+<font color="red">Owlの場合</font>(Chickenクラスの変更も行う)<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+
+        <td width="97%" height="auto">
+		class Owl <font color="red">implements Bird</font>{<br>
+		↓ここから下のプログラムは変更しない<br>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<br>
+<h3><font color="red">step.3</font></h3>
+最後に、新しく「インターフェース_B」タブ(タブ名はご自由に)を作成し、OwlとChickenが交互に表示されるプログラムを作成します。<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+        3<br>
+	4<br>
+	5<br>
+	6<br>
+        7<br>
+        8<br>
+	9<br>
+	10<br>
+	11<br>
+        12<br>
+        13<br>
+	14<br>
+	15<br>
+	16<br>
+        17<br>
+        18<br>
+        <td width="97%" height="auto">
+		Bird[]birds = new Bird[11];<br>
+		<br>
+		void setup(){<br>
+		<span>size(770,120); //ウインドウを描く<br>
+		<span>background(176, 204, 226);<br>
+		<span>for(int i = 0; i < birds.length; i++){<br>
+		<span><span>if((i % 2) == 0){ //iを2で割った時の余りが0か1で判断できる。<br>
+		<span><span>birds[i] = new Owl(35 + i * 70, 110); //上の方が先に表示される。今回だとOwlが先<br>
+		<span><span>} else { //余りが0ではない場合は、下のbird[i]が実行<br>
+		<span><span>birds[i] = new Chicken(35 + i * 70, 110);//逆でも問題ない。<br>
+		<span><span>}<br>
+		<span>}<br>
+		}<br>
+		void draw(){<br>
+		<span>for(int i = 0; i < birds.length; i++){<br>
+		<span><span>birds[i].display();<br>
+		<span><br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+今回は、合計11匹のOwlとChickenを表示させましたが、数を増やしたり減らしたりすることができます。
+<br>
+
+</body>
+</html>
